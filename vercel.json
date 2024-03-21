@@ -1,8 +1,8 @@
 {
   "installCommand": "pnpm install",
   "devCommand": "pnpm dev",
-  "buildCommand": "pnpm generate",
-  "outputDirectory": ".vercel/output/static",
+  "buildCommand": "pnpm build",
+  "outputDirectory": "dist",
   "headers": [
     {
       "source": "/(.*)",
