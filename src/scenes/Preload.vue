@@ -16,7 +16,5 @@ function onPreload(scene) {
 function onCreate(scene) {
 	game.scene.stop(SCENES.PRELOAD)
 	game.scene.start(SCENES.GAME)
-
-	console.log(scene.textures.get('img_vite'))
 }
 </script>

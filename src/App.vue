@@ -11,8 +11,8 @@ import PreloadScene from './scenes/Preload.vue'
 import GameScene from './scenes/Game.vue'
 
 const gameConfig = {
-	width: 700,
-	height: 480,
+	width: 960,
+	height: 540,
 	autoStart: true,
 }
 </script>
