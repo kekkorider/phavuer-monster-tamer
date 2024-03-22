@@ -14,7 +14,8 @@ function onPreload(scene) {
 }
 
 function onCreate(scene) {
+	console.log(`${scene.scene.key}:create invoked`)
 	game.scene.stop(SCENES.PRELOAD)
-	game.scene.start(SCENES.GAME)
+	game.scene.start(SCENES.BATTLE)
 }
 </script>

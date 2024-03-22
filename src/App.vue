@@ -1,14 +1,14 @@
 <template>
 	<Game :config="gameConfig">
 		<PreloadScene />
-		<GameScene :autoStart="false" />
+		<BattleScene :autoStart="false" />
 	</Game>
 </template>
 
 <script setup>
 import { Game } from 'phavuer'
 import PreloadScene from './scenes/Preload.vue'
-import GameScene from './scenes/Game.vue'
+import BattleScene from './scenes/Battle.vue'
 
 const gameConfig = {
 	autoStart: true,
