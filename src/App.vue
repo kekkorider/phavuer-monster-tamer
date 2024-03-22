@@ -11,8 +11,14 @@ import PreloadScene from './scenes/Preload.vue'
 import GameScene from './scenes/Game.vue'
 
 const gameConfig = {
-	width: 960,
-	height: 540,
 	autoStart: true,
+	pixelArt: true,
+	backgroundColor: 0xdd0000,
+	scale: {
+		width: 1024,
+		height: 576,
+		mode: Phaser.Scale.ScaleModes.FIT,
+		autoCenter: Phaser.Scale.Center.CENTER_BOTH,
+	},
 }
 </script>

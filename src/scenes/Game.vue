@@ -1,6 +1,6 @@
 <template>
 	<Scene :name="SCENES.GAME" @create="onCreate">
-		<Image :texture="'img_forest_background'" :x="0" :y="0" />
+		<Image :texture="'img_forest_background'" :x="0" :y="0" :origin="0.5" />
 
 		<Player
 			:controls="true"
