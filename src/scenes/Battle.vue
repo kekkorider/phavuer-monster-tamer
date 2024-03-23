@@ -10,32 +10,15 @@
 			:flipX="true"
 		/>
 
-		<Player
-			v-if="false"
-			:controls="true"
-			:width="100"
-			:height="100"
-			:x="game.scale.width / 2"
-			:y="game.scale.height / 2"
-			:fillColor="0x004455"
-		/>
-
-		<Player
-			v-if="false"
-			:width="50"
-			:height="50"
-			:x="game.scale.width / 3"
-			:y="30"
-		/>
+		<MonsterPanel :monster-name="'CARNODUSK'" :x="0" :y="0" />
+		<MonsterPanel :monster-name="'IGUANIGNITE'" :x="556" :y="318" />
 	</Scene>
 </template>
 
 <script setup>
-import { Scene, useGame, Image } from 'phavuer'
-import Player from '../Player.vue'
+import { Scene, Image } from 'phavuer'
 import { SCENES } from '../const.js'
-
-const game = useGame()
+import MonsterPanel from '../components/MonsterPanel.vue'
 
 function onCreate(scene) {
 	console.log(`${scene.scene.key}:create invoked`)
