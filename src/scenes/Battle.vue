@@ -13,7 +13,7 @@
 		<MonsterPanel :monster-name="'CARNODUSK'" :x="0" :y="0" />
 		<MonsterPanel :monster-name="'IGUANIGNITE'" :x="556" :y="318" />
 
-		<InfoPanel />
+		<BattleMenu :monster-name="'IGUANIGNITE'" />
 	</Scene>
 </template>
 
@@ -22,7 +22,7 @@ import { Scene, Image } from 'phavuer'
 import { SCENES } from '../const.js'
 
 import MonsterPanel from '../components/MonsterPanel.vue'
-import InfoPanel from '../components/InfoPanel.vue'
+import BattleMenu from '../components/BattleMenu.vue'
 
 function onCreate(scene) {
 	console.log(`${scene.scene.key}:create invoked`)
